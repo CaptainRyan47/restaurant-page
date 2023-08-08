@@ -4,6 +4,19 @@
 
 body {
   margin: 0;
+  text-align: center;
+  color: white;
+}
+
+#background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed;
+  position: fixed;
+  z-index: -1;
+  filter: blur(5px);
 }
 
 header {
@@ -16,6 +29,7 @@ header>img {
   height: 200px;
   padding-top: 10px;
   padding-left: 20px;
+  z-index: 999;
 }
 
 header>ul {
@@ -27,14 +41,26 @@ header>ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0;
 }
 
 header>ul>li {
-  padding: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 header>ul>li:hover{
   cursor: pointer;
   background-color: white;
   color: var(--ruby-red);
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 90px auto auto;
+  padding: 1em;
+  width: 70%;
+  min-width: 300px;
+  border-radius: 10px;
 }

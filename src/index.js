@@ -1,7 +1,10 @@
 import './styles.css'
-import Logo from './logo.png'
+import initial from './initial.js'
+import Coffee from './coffee.jpg'
 
-const logo = new Image()
-logo.src = Logo
+initial().createHeader()
+initial().addBackground()
 
-document.querySelector('#content>header').prepend(logo)
+const coffee = new Image()
+coffee.src = Coffee
+document.querySelector('main').append(coffee)
