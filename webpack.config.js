@@ -1,11 +1,13 @@
 const path = require('path')
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -15,7 +17,11 @@ module.exports = {
       {
         test: /\.(jpg|png|webp)$/i,
         type: 'asset/resource',
-      }
+      },
+      {
+        test: /\.ttf$/i,
+        type: 'asset/resource',
+      },
     ],
   },
 }

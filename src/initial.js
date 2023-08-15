@@ -1,8 +1,9 @@
 import Logo from './logo.png'
 import Background from './ruby-interior.webp'
+import menu from './menu'
 
 export default function initial() {
-  const page = document.querySelector('#content')
+  const page = document.querySelector('body')
 
   const createHeader = () => {
     const logo = new Image()
@@ -13,18 +14,21 @@ export default function initial() {
 
     const homeLink = document.createElement('li')
     homeLink.textContent = 'Home'
+    homeLink.id = 'home'
     homeLink.addEventListener('click', () => {
       console.log(homeLink)
     })
 
     const menuLink = document.createElement('li')
     menuLink.textContent = 'Menu'
+    menuLink.id = 'menu'
     menuLink.addEventListener('click', () => {
-      console.log(menuLink)
+      menu()
     })
 
     const contactLink = document.createElement('li')
     contactLink.textContent = 'Contact'
+    contactLink.id = 'contact'
     contactLink.addEventListener('click', () => {
       console.log(contactLink)
     })
