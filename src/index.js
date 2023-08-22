@@ -1,7 +1,6 @@
 import './styles.css'
 import initial from './initial.js'
-import menu from './menu.js'
-// import Coffee from './coffee.jpg'
+import home from './home'
 
 initial().createHeader()
 initial().addBackground()
@@ -12,6 +11,4 @@ export function clearPage() {
   });
 }
 
-// const coffee = new Image()
-// coffee.src = Coffee
-// document.querySelector('main').append(coffee)
+home()

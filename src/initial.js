@@ -1,5 +1,6 @@
 import Logo from './logo.png'
 import Background from './ruby-interior.webp'
+import home from './home'
 import menu from './menu'
 
 export default function initial() {
@@ -16,7 +17,7 @@ export default function initial() {
     homeLink.textContent = 'Home'
     homeLink.id = 'home'
     homeLink.addEventListener('click', () => {
-      console.log(homeLink)
+      home()
     })
 
     const menuLink = document.createElement('li')

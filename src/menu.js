@@ -25,10 +25,10 @@ export default function menu() {
 
   const addMenuToPage = () => {
     const page = document.querySelector('#content')
-    let title = document.createElement('h1')
+    const title = document.createElement('h1')
     title.textContent = 'Menu'
 
-    let menuContainer = document.createElement('div')
+    const menuContainer = document.createElement('div')
     menuContainer.id = 'menu-container'
 
     menuItems.forEach(item => {

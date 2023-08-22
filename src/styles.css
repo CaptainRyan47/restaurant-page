@@ -15,7 +15,13 @@ body {
 }
 
 body h1 {
-  font-size: 6rem;
+  font-size: 5rem;
+  margin: .2em;
+}
+
+body h2 {
+  font-size: 3rem;
+  margin-top: 0px;
 }
 
 #background {
@@ -36,7 +42,7 @@ header {
 }
 
 header>img {
-  height: 200px;
+  height: 150px;
   padding-top: 10px;
   padding-left: 20px;
   z-index: 999;
@@ -58,6 +64,7 @@ header>ul>li {
   height: 100%;
   display: flex;
   align-items: center;
+  padding: 0 .4em;
 }
 
 header>ul>li:hover{
@@ -68,12 +75,23 @@ header>ul>li:hover{
 
 #content {
   background-color: rgba(0, 0, 0, 0.5);
-  margin: 90px auto auto;
+  margin: 70px auto;
   padding: 3em;
   width: fit-content;
   min-width: 300px;
   max-width: 85%;
   border-radius: 10px;
+}
+
+#home-title {
+  margin-bottom: .2em;
+}
+
+#coffees {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 #menu-container {
