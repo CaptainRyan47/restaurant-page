@@ -2,6 +2,7 @@ import Logo from './logo.png'
 import Background from './ruby-interior.webp'
 import home from './home'
 import menu from './menu'
+import contact from './contact'
 
 export default function initial() {
   const page = document.querySelector('body')
@@ -31,7 +32,7 @@ export default function initial() {
     contactLink.textContent = 'Contact'
     contactLink.id = 'contact'
     contactLink.addEventListener('click', () => {
-      console.log(contactLink)
+      contact()
     })
 
     ul.append(homeLink, menuLink, contactLink)
@@ -43,7 +44,7 @@ export default function initial() {
     const background = document.createElement('div')
     background.style.backgroundImage = `url(${Background})`
     background.id = 'background'
-    document.querySelector('body').prepend(background)
+    page.prepend(background)
   }
 
   return { createHeader, addBackground }
